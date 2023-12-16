@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login/SignUp</title>
+          <meta charset="utf-8">
+          <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+          <meta name="viewport" content="width=device-width , initial-scale=1, user-scalable = 0">
+          <link rel="stylesheet" href="index.css"/>
+    </head>
+
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(0, 204, 204)" fill-opacity="4" d="M0,224L24,186.7C48,149,96,75,144,80C192,85,240,171,288,218.7C336,267,384,277,432,240C480,203,528,117,576,117.3C624,117,672,203,720,202.7C768,203,816,117,864,101.3C912,85,960,139,1008,181.3C1056,224,1104,256,1152,250.7C1200,245,1248,203,1296,192C1344,181,1392,203,1416,213.3L1440,224L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
+     <!----   <div class="inp"><input type="number" id="mobInp" placeholder="Mobile No." /></div>    ---->
+     <div class="margin">
+       <div class="center"><button type="submit" class="btn" id="login">Login</button></div>
+       <p class="or">Or</p>
+       <div class="center"><button type="submit" class="btn" id="sign">SignUp</button></div>
+    </div>
+     <!----  <p id="skip">Skip</p>   ----->
+     <div id="splash">
+        <img src="images/20231108_225150_0000.png" class="logo"></img>
+     </div>
+    </body>
+    <script>
+        document.getElementById("sign").addEventListener("click", function(){
+            window.location = "signup.html";
+        })
+        document.getElementById("login").addEventListener("click", function(){
+            window.location = "login.html";
+        })
+        window.onload = function(){
+var flag2 = localStorage.getItem("flag1");
+console.log(flag2);
+if(flag2 > 0){
+    setTimeout(()=>{
+        window.location = "main.html";
+    },2000);
+}
+}
+        setTimeout(()=>{
+      document.getElementById("splash").classList.toggle("fade");
+    },5000);
+      /*  document.getElementById("skip").addEventListener("click", function(){
+            window.location = "main.html";
+        }) */
+        </script>
+</html>

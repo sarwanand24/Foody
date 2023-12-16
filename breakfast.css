@@ -1,0 +1,112 @@
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } 
+    html,body{
+                overflow-x: hidden;
+                scrollbar-width: none;
+                width: 100%;
+                height: 100%;
+                position:absolute;
+            }  
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    #back-arrow{
+        color: black;
+        font-size: 50px;
+        font-weight: bolder;
+       position: absolute;
+       left: 5%;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        color: black;
+        padding: 5%;
+    }
+    .block{
+        padding: 5%;
+    }
+    .item-name{
+        font-size: 25px;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        max-width: 60%;
+    }
+    .item-des{
+        font-size: 16px;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 500;
+        max-width: 60%;
+        margin-top: 2%;
+    }
+    figcaption{
+        color: black;
+        z-index: 1000;
+        margin-left: 20px;
+        margin-top: -20px;
+      }
+     .items-img{
+        width: 120px;
+        height: 120px;
+        border-radius: 15px;
+        background-color: black;
+        z-index: -1000;
+     }
+     .figimg{
+        position: absolute;
+        right: 8%;
+     }
+     .opbg{
+        background-color: rgb(0, 204, 204);
+        border-radius: 8px;
+        padding: 5%;
+        font-weight: bolder;
+        font-family: sans-serif;
+        padding-top: 10px;
+    }
+    .no-of-item{
+        color: black;
+        font-size:20px;
+    }
+    .decrement-unicode, .increment-unicode{
+        color: black;
+        font-size: 25px;
+        padding-top: 4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    hr{
+        border: 1px dashed ;
+        margin-top: 20%;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #proceed{
+  text-align: center;
+  background-color: rgb(0, 204, 204);
+  color: white;
+  font-size: 30px;
+  padding: 3%;
+  width: 50%;
+  border-style: none;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-bottom: 1%;
+    }
+    .block:nth-of-type(n+7){
+        display: none;
+    }
